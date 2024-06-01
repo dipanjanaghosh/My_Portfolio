@@ -82,6 +82,67 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+section{
+    margin-top: 15px;
+}
+
+/* ========== Dark And Light Mode Toggle ======== */
+
+.theme-toggle {
+    position: fixed;
+    top: 50%;
+    z-index: 10;
+    right: 0;
+    border: none;
+    background-color: var(--color2);
+}
+
+body:not(.dark) .theme-toggle .lni-night,
+body.dark .theme-toggle .lni-sun {
+    cursor: pointer;
+    color: var(--bg-color2);
+    padding: 10px 10px;
+    display: block;
+    font-size: 1.25rem;
+}
+
+body:not(.dark) .theme-toggle .lni-sun {
+    display: none;
+
+}
+
+body.dark .theme-toggle .lni-night {
+    display: none;
+}
+
+/*========= Navigation Link When Scroll Active =======*/
+
+.portfolio-navbar ul li a.active-link {
+    font-weight: 800;
+}
+
+/*======== CSS Header Stick To Top =========*/
+
+header .header-sticky {
+    position: fixed !important;
+    background-color: #f5f5f5;
+    z-index: 2000;
+    transition: .4s;
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
+}
+
+.header-sticky .brand-name a {
+    color: #3e4455;
+}
+
+.header-sticky .navbar-toggle i {
+    color: #3e4455;
+}
+
+.header-sticky .portfolio-navbar ul li a {
+    color: #343434;
+}
+
 /* Wrapper */
 .portfolio-container {
     max-width: 1070px;
@@ -156,7 +217,6 @@ header {
 
 /* Style for about section */
 #about {
-    padding-top: 100px;
     background-color: var(--bg-color1);
 }
 
@@ -389,18 +449,21 @@ h2 strong {
         width: 0;
     }
 }
+
 /* Service section */
-#service{
+#service {
     padding: 60px 0;
     background-color: var(--bg-color1);
 }
-.service-row{
+
+.service-row {
     display: grid;
-    grid-template-rows: repeat(1,1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 2rem;
     margin-top: 2rem;
 }
-.service-card{
+
+.service-card {
     background-color: var(--bg-color2);
     cursor: pointer;
     border-radius: 5px;
@@ -408,71 +471,98 @@ h2 strong {
     text-align: center;
     transition: .4s;
 }
-.service-card .icon{
+
+.service-card .icon {
     font-size: 2.5rem;
     transition: .4s;
     color: var(--color1);
 }
-.service-content h6{
+
+.service-content h6 {
     color: var(--color1);
     transition: .4s;
     margin: 1rem 0;
 }
-.service-content p{
+
+.service-content p {
     transition: .4s;
     color: var(--color1);
 }
-.service-card:hover{
+
+.service-card:hover {
     background-color: #525fe1;
     transform: translateY(-10.5px);
 }
-.service-card:hover .icon, .service-card:hover h6,
-.service-card:hover p{
+
+.service-card:hover .icon,
+.service-card:hover h6,
+.service-card:hover p {
     color: #fff;
 }
+
+.certification-card {
+    cursor: pointer;
+    box-shadow: 1px 2px 5px #40e0d04f;
+    border-radius: 200px;
+    padding: 19px 50px;
+    text-align: center;
+    transition: .4s;
+}
+
 /* Project Section */
-#projects{
+#projects {
     padding: 60px 0;
     background-color: var(--bg-color2);
 }
-.filter-wrap{
+
+.filter-wrap {
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 /* Project section */
 
-.portfolio-wrapper{
+.portfolio-wrapper {
     display: flex;
     gap: 15px;
     flex-direction: column;
     margin-top: 30px;
 }
-.portfolio-wrapper .portfolio-col{
+
+.portfolio-wrapper .portfolio-col {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.portfolio-item.development img{
+
+.portfolio-item.development img {
     border-radius: 5px;
-    height: 350px;
+    height: auto;
+    box-shadow: 2px 2px 3cqi #9b9f9f42;
 }
-.portfolio-item.design img{
+
+.portfolio-item.design img {
     border-radius: 5px;
-    height: 250px;
+    height: auto;
+    box-shadow: 2px 2px 3px #9b9f9f42;
 }
+
 /*========= Portfolio Gallery =========*/
 
 .portfolio-item {
     position: relative;
     cursor: pointer;
 }
+
 .portfolio-item.show {
     animation: fadeIn 4.5s ease;
 }
+
 .portfolio-item.hide {
     display: none;
 }
+
 .portfolio-item-content {
     position: absolute;
     left: 25px;
@@ -484,7 +574,8 @@ h2 strong {
     transform: scale(1.15);
     opacity: 0;
 }
-.product-title{
+
+.product-title {
     width: 100%;
     position: absolute;
     bottom: -45px;
@@ -494,44 +585,87 @@ h2 strong {
     text-align: center;
     color: #fff;
 }
-.product-title h4, .product-title p{
+
+.product-title h4,
+.product-title p {
     color: #fff;
 }
-.portfolio-item:hover .portfolio-item-content{
+
+.portfolio-item:hover .portfolio-item-content {
     opacity: 1;
     transform: scale(1);
 }
-.portfolio-item:hover .portfolio-title{
+
+.portfolio-item:hover .portfolio-title {
     bottom: 30%;
     opacity: 1;
 }
 
 /* Style for contact section */
-#contact{
+#contact {
     background-color: var(--bg-color1);
     padding: 60px 0;
 }
+
 /* Contact general */
-.contact-general{
+.contact-general {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     margin-bottom: 3rem;
 }
-.content-card{
+
+.content-card {
     text-align: center;
 }
-.content-card .icon i{
+
+.content-card .icon i {
     font-size: 2.5rem;
     color: var(--color1);
 }
-.contact-content{
+
+.contact-content {
     margin-top: 20px;
 }
-.contact-content h5{
-    
+
+.contact-content h5 {
+    font-size: 1rem;
+    color: var(--color1);
+    font-weight: 500;
 }
 
+.contact-content span {
+    color: var(--color1);
+}
+
+/* Footer section*/
+footer {
+    background-color: var(--bg-color2);
+    padding: 20px 0;
+}
+
+.portfolio-row.footer-wrap {
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icon li {
+    display: inline-block;
+}
+
+.social-icon li:not(:last-child) {
+    margin-right: 0.5rem;
+    border-right: 1px solid var(--color2);
+    padding-right: 0.7rem;
+}
+
+.social-icon li a {
+    color: var(--color1);
+}
+
+.copyright-text {
+    display: none;
+}
 
 
 
@@ -593,7 +727,7 @@ h2 strong {
 
     /* About section responsive */
     #about {
-        padding: 175px 0 150px 0;
+        padding: 60px 0 60px 0;
     }
 
     .about-intro {
@@ -639,20 +773,22 @@ h2 strong {
     .qualification-content::after {
         left: -2px;
     }
-    .qualification-content::before{
+
+    .qualification-content::before {
         left: 0;
     }
-    .bar-content{
+
+    .bar-content {
         margin-bottom: 0;
     }
 
     /* Service section responsive */
-    .service-row{
-        grid-template-columns: repeat(3,1fr);
+    .service-row {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     /* Project section responsive */
-    .filter-wrap{
+    .filter-wrap {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -662,4 +798,52 @@ h2 strong {
     /* .portfolio-wrapper{
         flex-direction: row;
     } */
+
+    .portfolio-wrapper {
+        flex-direction: row;
+    }
+
+    .contact-general {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 4rem 0;
+    }
+
+    .contact-general h2 {
+        display: none;
+    }
+
+    .content-card:nth-of-type(2) {
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+    }
+
+    /*Footer section*/
+    portfolio-row.footer-wrap {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .copyright-text {
+        display: block;
+    }
+
+
+    /*========== Theme Icon Color When Nabar Sticky ========*/
+
+    .theme-toggle {
+        background: none;
+        position: static;
+        transform: none;
+    }
+
+    body:not(.dark) .header-sticky .theme-toggle .lni-night,
+    body.dark .header-sticky .theme-toggle .lni-sun {
+        color: #3e4455;
+    }
+
+    body:not(.dark) .theme-toggle .lni-night,
+    body.dark .theme-toggle .lni-sun {
+        color: var(--color2);
+    }
 }

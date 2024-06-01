@@ -11,7 +11,7 @@
 
 <body>
     <!--Header begins-->
-    <div class="portfolio-container">
+    <header class="portfolio-container">
         <div class="portfolio-row header-wrap">
             <div class="brand-name">
                 <a href="#" class="logo">Dipanjana Ghosh</a>
@@ -30,8 +30,12 @@
             <div class="navbar-toggle">
                 <i class="lni lni-grid-alt"></i>
             </div>
+            <button type="button" class="theme-toggle">
+                <i class="lni lni-night"></i>
+                <i class="lni lni-sun"></i>
+            </button>
         </div>
-    </div>
+    </header>
     <!--Header ends-->
     <!--About Section begins-->
     <section id="about">
@@ -77,7 +81,7 @@
                         </p>
                     </div>
                     <div class="hello-btn">
-                        <a href="#contact" id="contact">
+                        <a href="#contact">
                             Say Hello!!!
                         </a>
                     </div>
@@ -207,6 +211,82 @@
         </div>
     </section>
     <!-- Resume section end -->
+    <!-- Certificate section begins -->
+    <section id="services">
+        <div class="portfolio-container">
+            <h2>
+                <strong>Certification</strong>
+            </h2>
+            <div class="service-row">
+                <div class="certification-card">
+                    <div class="service-content">
+                        <div class="certification-item design">
+                            <img src="images/Angular_Udemy.jpg" alt="angular_udemy">
+                            <div class="">
+                                <h5>The Modern Angular Bootcamp</h5>
+                                <h4>Udemy</h4>
+                                <a href="https://www.udemy.com/certificate/UC-3359865e-87c6-4af9-a26c-d3d40158707c/">Credential
+                                    URL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="service-content">
+                        <div class="certification-item design">
+                            <img src="images/JSIntermediate_hackerrank.png" alt="JSIntermediate">
+                            <div class="">
+                                <h5>Javascript Intermediate</h5>
+                                <h4>HackerRank Skill Certificate</h4>
+                                <a href="https://www.hackerrank.com/certificates/iframe/41aa423323a6">Credential
+                                    URL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="service-content">
+                        <div class="certification-item design">
+                            <img src="images/JSbasic_hackerrank.png" alt="Javascript_basic">
+                            <div class="">
+                                <h5>Javascript Basic</h5>
+                                <h4>HackerRank Skill Certificate</h4>
+                                <a href="https://www.hackerrank.com/certificates/d62e44989f05">Credential
+                                    URL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="service-content">
+                        <div class="certification-item design">
+                            <img src="images/AngularIntermediate_hackerrank.png" alt="Angular_Intermediate">
+                            <div class="">
+                                <h5>Angular Intermediate</h5>
+                                <h4>HackerRank Skill Certificate</h4>
+                                <a href="https://www.hackerrank.com/certificates/iframe/9bef82d261f8">Credential
+                                    URL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="service-content">
+                        <div class="certification-item design">
+                            <img src="" alt="Javascript basic">
+                            <div class="">
+                                <h5>Problem solving through Programming in C</h5>
+                                <h4>NPTEL</h4>
+                                <a href="">Credential
+                                    URL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Certificate section ends -->
     <!-- Services section begins -->
     <section id="services">
         <div class="portfolio-container">
@@ -219,7 +299,7 @@
                         <i class="lni lni-css3"></i>
                     </div>
                     <div class="service-content">
-                        <h6>Web Development</h6>
+                        <h6>Web Design</h6>
                         <p>Design, develop, and maintain Angular frontend applications.<br>Rewrite code from old code to
                             latest angular (Code Refactoring)</p>
                     </div>
@@ -240,31 +320,10 @@
                         <i class="lni lni-adobe"></i>
                     </div>
                     <div class="service-content">
-                        <h6>Debugging</h6>
-                        <p>Implemented bug fixes, enhancements, and updates to ensure optimal
-                            performance and an improved user experience.<br>Optimizing the user experience by fixing bugs and testing for usability.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="icon">
-                        <i class="lni lni-adobe"></i>
-                    </div>
-                    <div class="service-content">
-                        <h6>Web Development</h6>
-                        <p>Assisting in the development of features that will be put on the website and in internal
-                            functions as well. Assuring that all user input is validated
+                        <h6>Debugging & Testing</h6>
+                        <p>Optimizing the user experience by fixing
+                            bugs and testing for usability.<br> Assuring that all user input is validated
                             before submitting to back-end.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="icon">
-                        <i class="lni lni-adobe"></i>
-                    </div>
-                    <div class="service-content">
-                        <h6>Web Development</h6>
-                        <p> To work closely with
-                            business users and complete development in given
-                            timeframe</p>
                     </div>
                 </div>
             </div>
@@ -288,71 +347,100 @@
             <div class="portfolio-wrapper">
                 <div class="portfolio-col">
                     <div class="portfolio-item design">
-                        <img src="" alt="">
+                        <img src="images/portfolio2.JPG" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>My PortFolio</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item development">
+                        <img src="images/mallcity1.JPG" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>Mall@City</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-col">
+                    <div class="portfolio-item development">
+                        <img src="images/videohub1.png" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>VideoHub</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item design">
+                        <img src="images/portfolio3.JPG" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>Portfolio</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-col">
+                    <div class="portfolio-item design">
+                        <img src="images/videohub4.png" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>VideoHub</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item development">
+                        <img src="images/videohub5.png" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>Mall@City</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-col">
+                    <div class="portfolio-item development">
+                        <img src="images/mallcity2.JPG" alt="">
+                        <div class="portfolio-item-content">
+                            <div class="product-title">
+                                <h4>Mall@City</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item design">
+                        <img src="images/portfolio1.JPG" alt="">
                         <div class="portfolio-item-content">
                             <div class="product-title">
                                 <h4>Dashboard</h4>
-                                <p>ughuwerh efuewhf ewufeu uwehrei ydti uer urbwefg ewfgwehrf  wyefwef fwe w uer uhrweu uewrwe 8rweu</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item development">
-                        <img src="" alt="">
-                        <div class="portfolio-item-content">
-                            <div class="product-title">
-                                <h4>Adoddle</h4>
-                                <p>reek fegi ifeife</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-col">
                     <div class="portfolio-item development">
-                        <img src="" alt="">
+                        <img src="images/dashboard1.JPG" alt="">
                         <div class="portfolio-item-content">
                             <div class="product-title">
-                                <h4>THP</h4>
-                                <p>eriue refreji reiferj</p>
+                                <h4>Dashboard</h4>
+                                <p></p>
                             </div>
                         </div>
                     </div>
-                    <div class="portfolio-item design">
-                        <img src="" alt="">
-                        <div class="portfolio-item-content">
-                            <div class="product-title">
-                                <h4>Video Hub</h4>
-                                <p>frgg</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-col">
                     <div class="portfolio-item development">
-                        <img src="" alt="">
-                        <div class="portfolio-item-content">
-                            <div class="product-title">
-                                <h4>fgef</h4>
-                                <p>ergwe hhhhhhd ufe efhe jfeu</p>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
-                <div class="portfolio-col">
-                    <div class="portfolio-item development">
-                        <img src="" alt="">
-                        <div class="portfolio-item-content">
-                            <div class="product-title">
-                                <h4>g3erhfd</h4>
-                                <p>hyegdh eduhwe uefhwe uedbe</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item design">
-                        <img src="" alt="">
+                        <img src="images/videohub2.png" alt="">
                         <div class="portfolio-item-content">
                             <div class="portfolio-title">
-                                <h4>fuygfr</h4>
-                                <p>yr eyfg ewufu ewfguew ewufewuf</p>
+                                <h4></h4>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -365,9 +453,10 @@
     <!-- Contact section begins -->
     <section id="contact">
         <div class="portfolio-container">
+            <h2><strong>Get In Touch</strong></h2>
             <!-- Contact gallery info begins-->
             <div class="contact-general">
-                <h2><strong>Get In Touch</strong></h2>
+
                 <div class="contact-card">
                     <div class="icon">
                         <i class="lni lni-map-marker"></i>
@@ -400,7 +489,24 @@
         </div>
     </section>
     <!-- Contact section ends -->
-
+    <!------- Footer Section Begins ------>
+    <footer>
+        <div class="portfolio-container">
+            <div class="portfolio-row footer-wrap">
+                <div class="copyright-text">
+                    <p>Copyright 2024</p>
+                </div>
+                <ul class="social-icon">
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/in/dipanjana-ghosh-940614170/">LinkedIn</a></li>
+                    <li><a href="https://github.com/dipanjanaghosh">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section Ends -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
