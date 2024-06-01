@@ -1,2 +1,1 @@
-# My_Portfolio
-Responsive Personal Portfolio Website Using HTML CSS JavaScript
+Create a personal portfolio website using HTML, CSS, and JavaScript
