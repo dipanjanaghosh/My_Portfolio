@@ -82,9 +82,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-section{
-    margin-top: 15px;
-}
 
 /* ========== Dark And Light Mode Toggle ======== */
 
@@ -253,6 +250,7 @@ h2 strong {
     order: 1;
     position: relative;
     z-index: 2;
+    margin-top: 100px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -309,7 +307,10 @@ h2 strong {
 .hello-btn a:hover {
     background-color: #293b5f;
 }
-
+#services{
+    padding: 60px 0;
+    background-color: var(--bg-color2);
+}
 /* Resume body */
 .resume-body {
     width: 100%;
